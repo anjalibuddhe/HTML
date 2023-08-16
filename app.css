@@ -1,0 +1,13 @@
+﻿body
+{
+    background-color:aquamarine;
+}
+div {
+    background: linear-gradient(red,blue);
+    height: 70px;
+    margin: 50px 30px 20px 25px;
+    border: 1px solid blue;
+    padding: 29px 30px 10px 20px;
+    border-radius: 29px 36px;
+    box-shadow: 12px 28px 40px red;
+}
