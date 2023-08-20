@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div{
+            color:blue;
+        }
+        p{
+            color:brown;
+        }
+        @media screen and (min-width: 320px) and (max-width:768px)
+        {
+            div {
+                color: lightgreen;
+                
+            }
+        }
+
+        @media screen and (min-width: 768px)
+        {
+            p {
+                color: red;
+                text-align:left;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width:1024px){
+            body {
+                background-color: lightgreen;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p>
+    <p>CSS Media query is a W3C recommendation and a CSS3 module which is used 
+    to adapt to conditions such as screen resolution (e.g. Smartphone screen vs. computer screen).</p>
+    <div>
+        Express Investigation | Valley's drug pandemic: One addict walks into Srinagar OPD every 12 minutes.
+        3 killed in fresh incident of violence in Manipur.
+        Unacademy sacks teacher who urged students to vote for 'educated candidates'
+    </div>
+</body>
+</html>
