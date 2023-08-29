@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title></title>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").toggleClass("newclass").slideUp(2000).slideDown(2000).fadeOut()
+            })
+        })
+    </script>
+    <style>
+        .newclass{
+            color:red;
+            font-size:30px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>
+        Also, both the after() and before() methods can take an infinite number of new elements as parameters. The new elements can be generated with text/HTML (like we have done in the example above), with jQuery, or with JavaScript code and DOM elements.
+    </p>
+
+    <button>Add Class</button>
+</body>
+</html>

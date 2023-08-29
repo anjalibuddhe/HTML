@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("ol").append("<li>Day.<li>");
+                $("ol").prepend("<b> bold text</b>")
+            });
+
+
+            $("#btn2").click(function () {
+                $("p").before("<b> Add new Text</b>")
+            });
+
+
+            $("#btn3").click(function () {
+                $("p").after("<i>add after text</i>")
+            })
+
+
+        });
+
+       
+    </script>
+</head>
+<body>
+    <ol>
+        <li>Today is</li>
+    </ol>
+
+    <p>
+        Also, both the after() and before() methods can take an infinite number of new elements as parameters. The new elements can be generated with text/HTML (like we have done in the example above), with jQuery, or with JavaScript code and DOM elements.
+    </p>
+    <button id="btn1">Append value</button>
+    <button id="btn2">AddText</button>
+    <button id="btn3">AddText</button>
+</body>
+</html>
