@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="d1"></div>
+
+    <script>
+        var student = [
+            { id: 1, name: "sara", course: "PHP" },
+            { id: 2, name: "Hari", course: "Java" },
+            { id: 3, name: "Sita", course: "C#" },
+            { id: 4, name: "John", course: "Angular" },
+            { id: 5, name: "Sana", course: "React" },
+        ];
+
+        
+        var data = "<table border='1'><tr><td>Id</td><td>Name</td><td>Courses</td> "
+        for (var i = 0; i < student.length; i++) {
+            data += "<tr><td>" + student[i].id + "</td><td>" + student[i].name +
+                "</td><td>" + student[i].course + "</td></tr>";
+
+        }
+
+        data += "</table>";
+
+        document.getElementById("d1").innerHTML = data;
+    </script>
+
+
+</body>
+</html>

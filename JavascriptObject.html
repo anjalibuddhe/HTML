@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+
+
+        var employee = {
+            id: 1,
+            name: "Rohan",
+            salary: 45600,
+            print: function () {
+                return "Id " + this.id + " Name " + this.name + " Salary " + this.salary;
+            },
+            display: () => {
+                return "Id " + employee.id + " Name " + employee.name + " Salary " + employee.salary;
+            },
+            caculate: () => {
+                var sal = employee.salary * 0.20;
+                employee.salary += sal;
+                return employee.salary;
+            }
+        };
+        console.log(employee.name + " " + employee.salary);
+
+        console.log(employee.caculate());
+        console.log(employee.display());
+    </script>
+
+</body>
+</html>

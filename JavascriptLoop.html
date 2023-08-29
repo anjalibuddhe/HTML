@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    Enter number:<input type="text" id="t1" /><br />
+    Enter number:<input type="text" id="t2" /><br />
+    result <input type="text" id="t3" disabled /><br />
+
+    <input type="button" value="Add" onclick="Addtion()" />
+    <input type="button" value="sub" onclick="sub()" />
+    <input type="button" value="Multi" onclick="multiplication()" />
+    <input type="button" value="Division" onclick="Division()" />
+    <input type="button" value="Clear Data" onclick="clearData()" />
+
+    <h1 id="add"></h1>
+    <p id="sub1"></p>
+    <p><strong id="mul1"></strong></p>
+    <p><italic id="div1"></italic></p>
+    <script>
+        function Addtion() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var sum = parseInt(a) + parseInt(b);
+            document.getElementById("t3").value = sum;
+            document.getElementById("add").innerHTML = "sum is" + sum;
+        }
+
+        function sub() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var sum = parseInt(a) - parseInt(b);
+            document.getElementById("t3").value = sum;
+            document.getElementById("sub1").innerHTML = "subtarction is" + sum;
+
+        }
+
+        function multiplication() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var sum = parseInt(a) * parseInt(b);
+            document.getElementById("t3").value = sum;
+            document.getElementById("mul1").innerHTML = "Multiplication is" + sum;
+
+        }
+
+        function Division() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var sum = parseInt(a) / parseInt(b);
+            document.getElementById("t3").value = sum;
+            document.getElementById("div1").innerHTML = "Division is" + sum;
+
+        }
+
+        function clearData() {
+            var res = confirm("Do you want to clear the form ?");
+            if (res == true) {
+                document.getElementById("t1").value = "";
+                document.getElementById("t2").value = "";
+                document.getElementById("t3").value = "";
+            }
+        }
+
+
+
+
+
+        for (var i = 1; i <= 10; i++) {
+            document.write("<br>" + i);
+        }
+
+
+
+        let sum = 0;
+        const n = 100
+
+        for (let i = 1; i <= n; i++) {
+            sum = sum + i
+        }
+
+        console.log('sum:', sum);
+        document.write(sum);
+
+        function Addition() {
+            var a = 10, b = 20;
+            var c = a + b;
+
+            document.write("<br>" + c);
+        }
+        Addition();
+
+        /* -------------------------------------------*/
+        function subtraction(a, b) {
+            var c = a - b;
+
+            document.write("<br>" + c);
+        }
+        subtraction(20, 49);
+
+        /*  -----------------------------------------*/
+
+        function mul(a, b) {
+            var c = a * b;
+            return c;
+
+        }
+        var result = mul(3, 4);
+        document.write("<br>" + result);
+
+        document.write("<br>");
+
+
+
+    </script>
+
+</body>
+</html>
